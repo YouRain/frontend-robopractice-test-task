@@ -1,0 +1,149 @@
+
+.outerTableWrapper {
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.innerTableWrapper {
+    overflow-x: scroll;
+    overflow-y: visible;
+    margin-left: 150px;
+    margin-right: 99px;
+    --width-first-column: 150px;
+    --width-last-column: 100px;
+}
+
+.table {
+    width: 100%;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+.thead {
+    background: whitesmoke;
+}
+
+.headRow {
+    background: blueviolet;
+}
+
+.bodyRow {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.headFirstColumn {
+    position: absolute;
+    left: 0;
+    width: var(--width-first-column);
+    height: 50.5px;
+    padding: 0 30px;
+    color: gold;
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet
+}
+.resizerFirst {
+    position: absolute;
+    top: 0;
+    right: -1.5px;
+    width: 4px;
+    height: 50.5px;
+    cursor: col-resize;
+    user-select: none;
+    /* border: 1px solid red; */
+    z-index: 10;
+    /* background: blueviolet */
+}
+.resizerFirst:hover {
+    border-right: 2px solid red;
+}
+.resizerLast {
+    position: absolute;
+    top: 0;
+    left: -1.5px;
+    width: 4px;
+    height: 50.5px;
+    cursor: col-resize;
+    user-select: none;
+    /* border: 1px solid red; */
+    z-index: 10;
+    /* background: blueviolet */
+}
+.resizerLast:hover {
+    border-left: 2px solid red;
+}
+
+.bodyFirstColumn {
+    padding: 7px;
+    font-weight: normal;
+    background: none;
+    cursor: auto;
+    color: black;
+    font-size: 16px;
+}
+
+.headTh {
+    position: relative;
+    height: 50px;
+    padding: 0 0;
+    color: gold;
+    font-size: 18px;
+    line-height: 1;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.headThLast {
+    position: relative;
+    height: 50px;
+    padding: 0 0;
+    color: gold;
+    font-size: 18px;
+    line-height: 1;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.headThWrapper {
+    /* position: absolute; */
+    display: block;
+    width: 70px;
+}
+
+.bodyTd {
+    height: 50px;
+    font-weight: normal;
+}
+
+.headLastColumn {
+    position: absolute;
+    right: 0;
+    width: var(--width-last-column);
+    height: 50.5px;
+    padding: 0 30px;
+    color: gold;
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet
+}
+
+.bodyLastColumn {
+    padding: 7px;
+    font-weight: bold;
+    background: none;
+    cursor: auto;
+    color: black;
+    font-size: 14px;
+}
